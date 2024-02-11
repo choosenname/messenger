@@ -66,7 +66,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -78,7 +78,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -90,7 +90,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -102,7 +102,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -114,7 +114,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -126,7 +126,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -138,7 +138,7 @@ export default function SideNav() {
                         </Avatar>
                         <div className="grid gap-0.5">
                             <p className="text-sm font-medium truncate">Bob Smith Bob Smith Bob Smith</p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Can't wait for the weekend!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Can&apost wait for the weekend!</p>
                         </div>
                     </Link>
                     <Link
@@ -166,7 +166,7 @@ export default function SideNav() {
                             <p className="text-sm font-medium truncate">
                                 David Brown David Brown David Brown David Brown David Brown
                             </p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">Let's catch up!</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">Let&aposs catch up!</p>
                         </div>
                     </Link>
                     <Link

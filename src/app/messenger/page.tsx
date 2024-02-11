@@ -42,7 +42,7 @@ export default function Messenger() {
                                 <div
                                     className="rounded-lg p-3 bg-blue-500 text-white dark:bg-blue-500 dark:text-gray-900">
                                     <p className="text-sm">
-                                        That sounds like a great idea! I'm all in for better collaboration. Let's
+                                        That sounds like a great idea! I&aposm all in for better collaboration. Let&aposs
                                         schedule a meeting for
                                         tomorrow to discuss our approach.
                                     </p>
