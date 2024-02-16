@@ -1,4 +1,4 @@
-import SideNav from "@/app/ui/messenger/sidenav";
+import SideNav from "@/components/messenger/sidenav";
 import React from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {

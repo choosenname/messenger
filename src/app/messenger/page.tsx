@@ -1,9 +1,7 @@
-import "@/app/globals.css"
-import Link from "next/link"
-import {Button} from "@/app/ui/button"
-import {AvatarImage, Avatar} from "@/app/ui/avatar"
-import {Input} from "@/app/ui/input"
-import {BellDot, LogOut, Paperclip, Search, Send, Settings, Smile, User, Video} from "lucide-react";
+import {Button} from "@/components/ui/button"
+import {Input} from "@/components/ui/input"
+import {Paperclip, Send, Smile, Video} from "lucide-react";
+import Image from 'next/image'
 
 
 export default function Messenger() {
@@ -12,9 +10,10 @@ export default function Messenger() {
             <div className="flex flex-1 min-h-0 overflow-hidden">
                 <div className="flex-1 flex flex-col min-h-0">
                     <div className="flex items-center p-4 border-b h-14">
-                        <Avatar className="w-10 h-10 border-2 border-white">
-                            <AvatarImage alt="Avatar" src="/kitty-eat-lava-minecraft.gif"/>
-                        </Avatar>
+                        <Image alt="Avatar" className="w-8 h-8 translate-y-3"
+                               width={32}
+                               height={32}
+                               src="/kitty-eat-lava-minecraft.gif"/>
                         <div className="mx-4">
                             <p className="font-semibold">Alice Johnson</p>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Online</p>
@@ -34,22 +33,25 @@ export default function Messenger() {
                                         collaborate more effectively. Let me know your thoughts!
                                     </p>
                                 </div>
-                                <Avatar className="w-8 h-8 translate-y-3 ml-auto">
-                                    <AvatarImage alt="Avatar" src="/kitty-eat-lava-minecraft.gif"/>
-                                </Avatar>
+                                <Image alt="Avatar" className="w-8 h-8 translate-y-3 ml-auto"
+                                       width={32}
+                                       height={32}
+                                       src="/kitty-eat-lava-minecraft.gif"/>
                             </div>
                             <div className="flex items-start">
                                 <div
                                     className="rounded-lg p-3 bg-blue-500 text-white dark:bg-blue-500 dark:text-gray-900">
                                     <p className="text-sm">
-                                        That sounds like a great idea! I&aposm all in for better collaboration. Let&aposs
+                                        That sounds like a great idea! I&aposm all in for better collaboration.
+                                        Let&aposs
                                         schedule a meeting for
                                         tomorrow to discuss our approach.
                                     </p>
                                 </div>
-                                <Avatar className="w-8 h-8 translate-y-3 ml-auto">
-                                    <AvatarImage alt="Avatar" src="/github-mark.png"/>
-                                </Avatar>
+                                <Image alt="Avatar" className="w-8 h-8 translate-y-3 ml-auto"
+                                       width={32}
+                                       height={32}
+                                       src="/github-mark.png"/>
                             </div>
                             <div className="flex items-start">
                                 <div className="rounded-lg p-3 bg-gray-100 dark:bg-gray-800">
@@ -61,9 +63,10 @@ export default function Messenger() {
                                         src="/17074107720481mmres5o.png"
                                     />
                                 </div>
-                                <Avatar className="w-8 h-8 translate-y-3 ml-auto">
-                                    <AvatarImage alt="Avatar" src="/kitty-eat-lava-minecraft.gif"/>
-                                </Avatar>
+                                <Image alt="Avatar" className="w-8 h-8 translate-y-3 ml-auto"
+                                       width={32}
+                                       height={32}
+                                       src="/kitty-eat-lava-minecraft.gif"/>
                             </div>
                         </div>
                     </div>
