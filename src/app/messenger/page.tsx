@@ -3,8 +3,7 @@ import {Input} from "@/components/ui/input"
 import {Paperclip, Send, Smile, Video} from "lucide-react";
 import Image from 'next/image'
 
-
-export default function Messenger() {
+export default async function Messenger() {
     return (
         <div key="1" className="flex flex-col h-screen border-t border-b border-gray-100 dark:border-gray-800">
             <div className="flex flex-1 min-h-0 overflow-hidden">
