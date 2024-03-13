@@ -27,16 +27,16 @@ export const {
     },
     callbacks: {
         async session({token, session}) {
-            console.log({
-                sessionToken: token
-            });
-
             if (token.sub && session.user) {
                 session.user.id = token.sub;
             }
 
             if (token.role && session.user) {
                 session.user.role = token.role as UserRole;
+            }
+
+            if(session.user) {
+                session.user.name = token.name;
             }
 
             return session;
@@ -48,6 +48,7 @@ export const {
 
             if (!existingUser) return token;
 
+            token.name = existingUser.name;
             token.role = existingUser.role;
 
             return token;
