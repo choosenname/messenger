@@ -1,4 +1,6 @@
 export const publicRoutes = [
+    "/",
+    "/api/uploadthing"
 ];
 
 export const authRoutes = [
