@@ -21,8 +21,9 @@ model User {
   password String
   role     UserRole @default(USER)
 
-  servers Server[]
-  chanels Channel[]
+  servers  Server[]
+  channels Channel[]
+  members  Member[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -37,8 +38,8 @@ model Server {
   userId String @db.Uuid
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  members Member[]
-  chanels Channel[]
+  members  Member[]
+  channels Channel[]
 
   createdAt DateTime @default(now())
   updateAt  DateTime @updatedAt
@@ -59,10 +60,14 @@ model Member {
   serverId String @db.Uuid
   server   Server @relation(fields: [serverId], references: [id], onDelete: Cascade)
 
+  userId String @db.Uuid
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   createdAt DateTime @default(now())
   updateAt  DateTime @updatedAt
 
   @@index([serverId])
+  @@index([userId])
 }
 
 enum ChanelType {

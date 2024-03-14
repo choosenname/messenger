@@ -7,6 +7,7 @@ import {UserRole} from "@prisma/client";
 
 export type ExtendedUser = DefaultSession["user"] & {
     role: UserRole,
+    imageUrl: string
 };
 
 declare module "next-auth" {
@@ -37,6 +38,7 @@ export const {
 
             if(session.user) {
                 session.user.name = token.name;
+                session.user.imageUrl = token.imageUrl as string;
             }
 
             return session;
@@ -50,6 +52,7 @@ export const {
 
             token.name = existingUser.name;
             token.role = existingUser.role;
+            token.imageUrl = existingUser.imageUrl;
 
             return token;
         }
