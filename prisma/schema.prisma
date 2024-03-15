@@ -71,7 +71,7 @@ model Member {
   @@index([userId])
 }
 
-enum ChanelType {
+enum ChannelType {
   TEXT
   AUDIO
   VIDEO
@@ -80,7 +80,7 @@ enum ChanelType {
 model Channel {
   id   String     @id @default(uuid()) @db.Uuid
   name String
-  type ChanelType @default(TEXT)
+  type ChannelType @default(TEXT)
 
   userId String @db.Uuid
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
