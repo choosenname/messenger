@@ -7,6 +7,7 @@ import {cn} from "@/lib/utils";
 import {Open_Sans} from "next/font/google";
 import {ThemeProvider} from "@/components/providers/theme-provider";
 import {ModalProvider} from "@/components/providers/modal-provider";
+import {SocketProvider} from "@/components/providers/socket-provider";
 
 const font = Open_Sans({subsets: ['latin']})
 
@@ -33,8 +34,10 @@ export default async function RootLayout({children}:
                 enableSystem={true}
                 storageKey="discord-theme"
             >
-                <ModalProvider/>
-                {children}
+                <SocketProvider>
+                    <ModalProvider />
+                    {children}
+                </SocketProvider>
             </ThemeProvider>
             </body>
             </html>
