@@ -12,7 +12,7 @@ const ServerIdLayout = async ({children, params,}: {
     if (!user) {
         //TODO check in it necessary
         //     return redirectToSignIn();
-        return redirect("/");
+        return redirect("/auth/login");
     }
 
     const server = await db.server.findUnique({

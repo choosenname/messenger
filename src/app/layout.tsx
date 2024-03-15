@@ -29,8 +29,8 @@ export default async function RootLayout({children}:
             <Toaster/>
             <ThemeProvider
                 attribute="class"
-                defaultTheme="dark"
-                enableSystem={false}
+                defaultTheme="ligth"
+                enableSystem={true}
                 storageKey="discord-theme"
             >
                 <ModalProvider/>
