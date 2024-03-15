@@ -3,6 +3,12 @@ import {SessionProvider} from "next-auth/react";
 import {auth} from "@/auth";
 import React from "react";
 import {Toaster} from "@/components/ui/sonner";
+import {cn} from "@/lib/utils";
+import {Open_Sans} from "next/font/google";
+import {ThemeProvider} from "@/components/providers/theme-provider";
+import {ModalProvider} from "@/components/providers/modal-provider";
+
+const font = Open_Sans({subsets: ['latin']})
 
 export const metadata = {
     title: 'OneTeam',
@@ -10,15 +16,26 @@ export const metadata = {
 }
 
 export default async function RootLayout({children}:
-{ children: React.ReactNode }) {
+                                             { children: React.ReactNode }) {
     const session = await auth();
 
     return (
         <SessionProvider session={session}>
-            <html lang="en">
-            <body>
+            <html lang="en" suppressHydrationWarning>
+            <body className={cn(
+                font.className,
+                "bg-white dark:bg-[#313338]"
+            )}>
             <Toaster/>
-            {children}
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="dark"
+                enableSystem={false}
+                storageKey="discord-theme"
+            >
+                <ModalProvider/>
+                {children}
+            </ThemeProvider>
             </body>
             </html>
         </SessionProvider>
